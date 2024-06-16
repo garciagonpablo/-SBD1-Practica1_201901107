@@ -1,3 +1,13 @@
+-- Para esta base de datos no se hicieron muchas modificaciones al modelo propuesto, y cada tabla es muy
+-- clara en la función que desempeña. En la tabla Avion encontramos toda la información sobre las aeronaves,
+-- Mantenimiento es para documentar los mantenimientos que se le hagan junto con el personal que hizo el man-
+-- tenimiento, Empleado es el personal que se dedica ya sea de area administrativa como mecánico y todos
+-- deben de ir marcando su asistencia diaria con la información requerida cada día de trabajo, en caso que se
+-- efectue una baja se debe de llenar la tabla correspondiente detallando los motivos de esta, para los Clie-
+-- ntes se debe de llenar información básica de contacto, cada cliente puede tener varios estados de Pasajero
+-- y a esta tabla es la que referencia el boleto cada que un Cliente desea volar, los datos de pago están re-
+-- ferenciados hacia el boleto para poder tener más detalle de como se realizó el pago de dicho boleto.
+
 -- TABLA: Avion
 -- id
 -- modelo
@@ -45,13 +55,12 @@
 -- puesto
 -- horas_vuelo
 
-
-
 -- TABLA: Baja
 -- id 
 -- retiro_despido (retiro/despido)
 -- fecha
 -- motivo
+-- id_empleado
 
 -- TABLA: Asistencia
 -- id
